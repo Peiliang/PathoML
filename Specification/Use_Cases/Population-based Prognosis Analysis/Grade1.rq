@@ -1,0 +1,32 @@
+SELECT ?segmentation WHERE {
+    ?diagnosis rdf:type histo:Diagnosis ;
+        histo:hasXref ?grade1Xref ;
+        histo:has_Morphologic_Evidence ?phenotype .
+    ?grade1Xref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/NCIT_C35851" .
+    ?phenotype rdf:type histo:Cellular_Appearances ;
+        histo:present_Entity ?cell ;
+        histo:hasXref ?grade1PhenotypeXref .
+    ?grade1PhenotypeXref rdf:type histo:UnificationXref ;
+        histo:uri "http://www.aipath.com/histo/HISTO_0000020" .
+    ?cell rdf:type histo:NeoplasticCell ;
+        histo:hasCellularComponent ?nucleus ;
+        histo:hasXref ?neoplasticCellXref ;
+        histo:entityReference ?cellRef .
+    ?neoplasticCellXref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/NCIT_C12922" .
+    ?cellRef rdf:type histo:CellReference ;
+        histo:hasXref ?cellXref .
+    ?cellXref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/FMA_68646" .
+    ?nucleus rdf:type histo:NeoplasticCellularComponent ;
+        histo:segmentation ?segmentation ;
+        histo:entityReference ?nucleusRef ;
+        histo:hasXref ?neoplasticNucleusXref .
+    ?neoplasticNucleusXref rdf:type histo:UnificationXref ;
+        histo:uri "http://www.aipath.com/histo/HISTO_0000006" .
+    ?nucleusRef rdf:type histo:CellularComponentReference ;
+        histo:hasXref ?nucleusXref .
+    ?nucleusXref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/GO_0005634" .
+}

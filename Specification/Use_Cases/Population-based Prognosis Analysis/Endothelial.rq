@@ -1,0 +1,16 @@
+SELECT ?segmentation WHERE {
+    ?cell rdf:type histo:StromaCell ;
+        histo:hasCellularComponent ?nucleus ;
+        histo:entityReference ?cellRef .
+    ?cellRef rdf:type histo:CellReference ;
+        histo:hasXref ?cellXref .
+    ?cellXref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/FMA_66772" .
+    ?nucleus rdf:type histo:StromaCellularComponent ;
+        histo:segmentation ?segmentation ;
+        histo:entityReference ?nucleusRef .
+    ?nucleusRef rdf:type histo:CellularComponentReference ;
+        histo:hasXref ?nucleusXref .
+    ?nucleusXref rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/GO_0005634" .
+}

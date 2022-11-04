@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:histo="https://pathoml-1308125782.cos.ap-chengdu.myqcloud.com/PathoML.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	<owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="https://pathoml-1308125782.cos.ap-chengdu.myqcloud.com/PathoML.owl"/>
+    </owl:Ontology>
+
+	<!--Slide -->
+	<histo:HE_Slide rdf:ID="Slide1"> 
+        <histo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCGA-F9-A97G-01Z-00-DX1.AD772BDA-5C18-43B1-A337-7FF6E09A9DB6</histo:id>
+    </histo:HE_Slide>
+
+    <!--Diagnosis -->
+	<histo:Diagnosis rdf:ID="Diagnosis1"> 
+        <histo:hasXref rdf:resource="#UnificationXref_ISUP_Grading_1"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype3"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype4"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype7"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype8"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype11"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype13"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype19"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype21"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype23"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype25"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype26"/>
+        <histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISUP Grading 1</histo:displayName>
+    </histo:Diagnosis>
+    <histo:Diagnosis rdf:ID="Diagnosis2"> 
+        <histo:hasXref rdf:resource="#UnificationXref_ISUP_Grading_2"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype12"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype22"/>
+        <histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISUP Grading 2</histo:displayName>
+    </histo:Diagnosis>
+	<histo:Diagnosis rdf:ID="Diagnosis3"> 
+		<histo:hasXref rdf:resource="#UnificationXref_ISUP_Grading_3"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype6"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype9"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype14"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype15"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype16"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype18"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype20"/>
+		<histo:has_Morphologic_Evidence rdf:resource="#Phenotype24"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISUP Grading 3</histo:displayName>
+	</histo:Diagnosis>
+
+
+	<!--Phenotype -->
+	<histo:Cellular_Appearances rdf:ID="Phenotype3">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell3"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype4">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell4"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype6">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell6"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype7">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell7"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype8">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell8"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype9">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell9"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype11">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell11"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype12">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell12"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 2</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_2"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype13">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell13"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype14">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell14"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype15">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell15"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype16">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell16"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype18">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell18"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype19">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell19"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype20">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell20"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype21">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell21"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype22">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell22"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 2</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_2"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype23">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell23"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype24">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell24"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 3</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_3"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype25">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell25"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+	<histo:Cellular_Appearances rdf:ID="Phenotype26">
+		<histo:present_Entity rdf:resource="#ccRCC_Cell26"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype of ISUP Grading 1</histo:displayName>
+		<histo:hasXref rdf:resource="#UnificationXref_Phenotype_of_ISUP_Grading_1"/>
+	</histo:Cellular_Appearances>
+
+
+    <!--Cell -->
+    <histo:StromaCell rdf:ID="Endothelial_Cell1">
+		<histo:hasCellularComponent rdf:resource="#Endothelial_Nucleus1"/>
+		<histo:entityReference rdf:resource="#CellReference_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+	</histo:StromaCell>
+    <histo:StromaCellularComponent rdf:ID="Endothelial_Nucleus1">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of Endothelial Cell</histo:displayName>
+        <histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</histo:segmentation>
+	</histo:StromaCellularComponent>
+    <histo:StromaCell rdf:ID="Endothelial_Cell2">
+		<histo:hasCellularComponent rdf:resource="#Endothelial_Nucleus2"/>
+		<histo:entityReference rdf:resource="#CellReference_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+	</histo:StromaCell>
+    <histo:StromaCellularComponent rdf:ID="Endothelial_Nucleus2">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of Endothelial Cell</histo:displayName>
+        <histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</histo:segmentation>
+	</histo:StromaCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell3">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus3"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus3">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell4">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus4"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus4">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+    <histo:StromaCell rdf:ID="Endothelial_Cell5">
+		<histo:hasCellularComponent rdf:resource="#Endothelial_Nucleus5"/>
+		<histo:entityReference rdf:resource="#CellReference_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+	</histo:StromaCell>
+    <histo:StromaCellularComponent rdf:ID="Endothelial_Nucleus5">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of Endothelial Cell</histo:displayName>
+        <histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</histo:segmentation>
+	</histo:StromaCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell6">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus6"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus6">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell7">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus7"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus7">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell8">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus8"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus8">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell9">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus9"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus9">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+    <histo:StromaCell rdf:ID="Endothelial_Cell10">
+		<histo:hasCellularComponent rdf:resource="#Endothelial_Nucleus10"/>
+		<histo:entityReference rdf:resource="#CellReference_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+	</histo:StromaCell>
+    <histo:StromaCellularComponent rdf:ID="Endothelial_Nucleus10">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of Endothelial Cell</histo:displayName>
+        <histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</histo:segmentation>
+	</histo:StromaCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell11">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus11"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus11">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell12">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus12"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus12">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell13">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus13"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus13">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell14">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus14"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus14">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell15">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus15"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus15">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell16">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus16"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus16">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+    <histo:StromaCell rdf:ID="Endothelial_Cell17">
+		<histo:hasCellularComponent rdf:resource="#Endothelial_Nucleus17"/>
+		<histo:entityReference rdf:resource="#CellReference_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+	</histo:StromaCell>
+    <histo:StromaCellularComponent rdf:ID="Endothelial_Nucleus17">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of Endothelial Cell</histo:displayName>
+        <histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17</histo:segmentation>
+	</histo:StromaCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell18">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus18"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus18">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell19">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus19"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus19">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell20">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus20"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus20">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell21">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus21"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus21">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell22">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus22"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus22">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell23">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus23"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus23">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell24">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus24"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus24">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell25">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus25"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus25">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+	<histo:NeoplasticCell rdf:ID="ccRCC_Cell26">
+		<histo:hasCellularComponent rdf:resource="#ccRCC_Nucleus26"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Neoplastic_Cell"/>
+		<histo:entityReference rdf:resource="#CellReference_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ccRCC Neoplastic Cell</histo:displayName>
+	</histo:NeoplasticCell>
+	<histo:NeoplasticCellularComponent rdf:ID="ccRCC_Nucleus26">
+		<histo:entityReference rdf:resource="#CellularComponentReference_Nucleus"/>
+		<histo:hasXref rdf:resource="#UnificationXref_Nucleus_of_Neoplastic_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus of ccRCC Neoplastic Cell</histo:displayName>
+		<histo:segmentation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26</histo:segmentation>
+	</histo:NeoplasticCellularComponent>
+
+
+
+	<!--EntityReference -->
+	<histo:CellReference rdf:ID="CellReference_Cell">
+        <histo:hasXref rdf:resource="#UnificationXref_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell</histo:displayName>
+    </histo:CellReference>
+	<histo:CellularComponentReference rdf:ID="CellularComponentReference_Nucleus">
+        <histo:hasXref rdf:resource="#UnificationXref_Nucleus"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleus</histo:displayName>
+    </histo:CellularComponentReference>
+    <histo:CellReference rdf:ID="CellReference_Endothelial_Cell">
+        <histo:hasXref rdf:resource="#UnificationXref_Endothelial_Cell"/>
+		<histo:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial Cell</histo:displayName>
+    </histo:CellReference>
+
+
+
+	<!--UnificationXref -->
+    <histo:UnificationXref rdf:ID="UnificationXref_ISUP_Grading_1">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT_C35851</histo:uri>
+    </histo:UnificationXref>
+    <histo:UnificationXref rdf:ID="UnificationXref_ISUP_Grading_2">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT_C35852</histo:uri>
+    </histo:UnificationXref>
+	<histo:UnificationXref rdf:ID="UnificationXref_ISUP_Grading_3">
+		<histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT_C35853</histo:uri>
+	</histo:UnificationXref>
+    <histo:UnificationXref rdf:ID="UnificationXref_Phenotype_of_ISUP_Grading_1">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.aipath.com/histo/HISTO_0000020</histo:uri>
+    </histo:UnificationXref>
+    <histo:UnificationXref rdf:ID="UnificationXref_Phenotype_of_ISUP_Grading_2">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.aipath.com/histo/HISTO_0000021</histo:uri>
+    </histo:UnificationXref>
+	<histo:UnificationXref rdf:ID="UnificationXref_Phenotype_of_ISUP_Grading_3">
+		<histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.aipath.com/histo/HISTO_0000022</histo:uri>
+	</histo:UnificationXref>
+    <histo:UnificationXref rdf:ID="UnificationXref_Neoplastic_Cell">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT_C12922</histo:uri>
+    </histo:UnificationXref>
+	<histo:UnificationXref rdf:ID="UnificationXref_Nucleus_of_Neoplastic_Cell">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.aipath.com/histo/HISTO_0000006</histo:uri>
+    </histo:UnificationXref>
+	<histo:UnificationXref rdf:ID="UnificationXref_Cell">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/FMA_68646</histo:uri>
+    </histo:UnificationXref>
+	<histo:UnificationXref rdf:ID="UnificationXref_Nucleus">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/GO_0005634</histo:uri>
+    </histo:UnificationXref>
+    <histo:UnificationXref rdf:ID="UnificationXref_Endothelial_Cell">
+        <histo:uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/FMA_66772</histo:uri>
+    </histo:UnificationXref>
+</rdf:RDF>

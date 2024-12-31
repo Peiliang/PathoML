@@ -1,0 +1,114 @@
+name: unified_env
+channels:
+  - conda-forge       # stardist, openslide 等可能主要在 conda-forge
+  - pytorch           # pytorch, pytorch-cuda
+  - nvidia            # 一些 cuda 相关包
+  - defaults
+dependencies:
+  # ------ 核心 Python 版本 ------
+  - python=3.9
+
+  # ------ 部分常用 Conda 包 (根据需要裁剪/添加) ------
+  - pip=24.2          # pip 版本, 你也可用 pip>=23
+  - numpy=1.23.1
+  - pandas=2.0.3
+  - scikit-image=0.21.0
+  - scikit-learn=1.3.1
+  - openslide=3.4.1
+  - openslide-python=1.2.0
+  - ffmpeg=4.3=hf484d3e_0
+  - libjpeg-turbo=2.0.0=h9bf148f_0
+
+  # ------ PyTorch 及 CUDA 依赖 ------
+  # 假设我们统一到 PyTorch 2.5.1 (CUDA 12.4)
+  - pytorch=2.5.1=py3.9_cuda12.4_cudnn9.1.0_0
+  - pytorch-cuda=12.4=hc786d27_7
+  - torchaudio=2.5.1=py39_cu124
+  - torchvision=0.20.1=py39_cu124
+  # 如果合并后报冲突，可略去这些精确版本号，让 conda 自行解析:
+  #   - pytorch-cuda=12.4
+  #   - pytorch
+  #   - torchvision
+  #   - torchaudio
+
+  # ------ 用于后续 pip 安装 ------
+  - pip:
+      # ===== 以下是合并自两个环境的 pip 列表 =====
+      # 1) BiomedParse / deepspeed / detectron2-xyz 等
+      - accelerate==0.23.0
+      - antlr4-python3-runtime==4.9.3
+      - appdirs==1.4.4
+      - black==21.4b2          # 环境1是21.4b2, 环境2是23.1.0, 统一用较新
+      - cloudpickle==3.0.0
+      - cython==3.0.2
+      - deepspeed==0.10.3
+      - diffdist==0.1
+      - einops==0.8.0         # 环境2中是0.6.1, 环境1中是0.8.0, 取高或低需测试
+      - ftfy==6.1.1
+      - fvcore==0.1.5.post20221221
+      - git+https://github.com/MaureenZOU/detectron2-xyz.git
+      - hjson==3.1.0
+      - huggingface-hub==0.17.3
+      - hydra-core==1.3.2
+      - imageio==2.35.1       # 环境2中写了2.31.1, 环境1中写了2.35.1
+      - infinibatch==0.1.1
+      - iopath==0.1.9
+      - json-tricks==3.17.3
+      - kornia==0.7.0
+      - mup==1.0.0
+      - mypy-extensions==1.0.0
+      - ninja==1.11.1.1
+      - nltk==3.8.1
+      - omegaconf==2.3.0
+      - opencv-python==4.8.1.78
+      - open-clip-torch==2.26.1
+      - pandas==2.0.3         # pip 重复, 但已在 conda 安装, 若无特殊版本要求可去掉
+      - pathspec==0.12.1
+      - pillow==9.5.0         # 环境1是9.4.0, 环境2是9.5.0, 统一用9.5.0
+      - portalocker==2.10.1
+      - py-cpuinfo==9.0.0
+      - pycocotools==2.0.7
+      - pydantic==1.10.18     # 环境2里是1.10.4, 这里是1.10.18 => 需要测试
+      - pydot==3.0.1
+      - regex==2023.10.3
+      - sentencepiece==0.1.99
+      - tabulate==0.9.0
+      - termcolor==2.4.0
+      - timm==0.4.12
+      - tokenizers==0.14.1
+      - transformers==4.34.0
+      - vision-datasets==0.2.2
+      - yacs==0.1.8
+
+      # 2) CellViT / tensorflow / stardist 等
+      - mako==1.2.4
+      - csbdeep==0.7.4
+      - h5py==3.9.0
+      - keras==2.12.0
+      - natsort==8.4.0
+      - stardist==0.8.5
+      - pyjwt==2.6.0
+      - albumentations==1.3.0
+      - future==0.18.2
+      - geojson==3.0.0
+      - jupyterlab==4.0.2
+      - ipython-genutils==0.2.0
+      - matplotlib==3.7.1
+      - pandarallel==1.6.5
+      - pyyaml==6.0
+      - rasterio==1.3.5.post1
+      - schema==0.7.5
+      - scipy<1.8.2              # 环境1没固定, 你可改用 1.10.1, 看 stardist 是否兼容
+      - seaborn==0.12.2
+      - simpleitk==2.2.1
+      - shapely==1.8.5.post1
+      - sqlalchemy==2.0.17
+      - tensorflow==2.12.0       # CPU 版(默认). 若想 GPU 需另行匹配 CUDA 11.8
+      - tqdm==4.65.0
+      - ujson==5.8.0
+      - wandb==0.15.4
+      - flake8==6.0.0
+      - flake8-html==0.4.3
+      - pre-commit==3.0.3
+      - genbadge==1.1.0
+      - histolab==0.6.0

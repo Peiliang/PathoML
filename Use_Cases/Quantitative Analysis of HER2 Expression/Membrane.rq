@@ -1,0 +1,10 @@
+SELECT ?segmentation WHERE {
+    ?cell histo:hasCellularComponent ?membrane .
+    ?membrane rdf:type histo:NeoplasticCell ;
+        histo:entityReference ?refMembrane ;
+        histo:segmentation ?segmentation .
+    ?refMembrane rdf:type histo:CellularComponentReference ;
+        histo:hasXref ?XrefMembrane .
+    ?XrefMembrane rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/GO_0044298" .
+}

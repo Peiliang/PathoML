@@ -1,0 +1,8 @@
+SELECT ?cell WHERE {
+    ?cell rdf:type histo:NeoplasticCell ;
+        histo:entityReference ?refCell .
+    ?refCell rdf:type histo:CellReference ;
+        histo:hasXref ?XrefCell .
+    ?XrefCell rdf:type histo:UnificationXref ;
+        histo:uri "http://purl.obolibrary.org/obo/FMA_68646" .
+}

@@ -1,1 +1,0 @@
-docker run -it --gpus all --shm-size=128G -v /mnt:/mnt -v $(pwd):/workspace -w /workspace seem

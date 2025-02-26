@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/peiliang/projects/BiomedParse/nuclei_detection.py", line 1, in <module>
-    from Cellvit.cellvit_inference import CellViTInferenceModule
-  File "/home/peiliang/projects/BiomedParse/Cellvit/cellvit_inference.py", line 9, in <module>
-    from .utils.tools import unflatten_dict, get_size_of_dict
-  File "/home/peiliang/projects/BiomedParse/Cellvit/utils/tools.py", line 18, in <module>
-    from utils.__init__ import logger
-ModuleNotFoundError: No module named 'utils'

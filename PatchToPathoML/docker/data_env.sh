@@ -1,1 +1,0 @@
-export HANOVER_DATASETS=biomedparse_datasets/ # Path to the datasets

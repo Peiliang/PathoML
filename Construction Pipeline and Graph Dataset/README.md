@@ -92,8 +92,8 @@ python inference_examples_RGB_optimized.py --if_folder True --image_path /path/t
 
 `--text_prompt`: Specify the text prompt for analysis.
 
-## Example OWL File Generated for the Bracs Dataset
-A sample OWL file generated for the Bracs dataset is available for download:
+## Graph Dataset Generated for BRACS
+PathoML files generated for the Bracs dataset are available here:
 [Google Drive Link](https://drive.google.com/file/d/1YCmY4jrca1XLYzlV1z137WF3pYfPShQJ/view?usp=drive_link)
 
 ## Citation

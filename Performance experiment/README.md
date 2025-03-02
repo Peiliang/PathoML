@@ -5,7 +5,7 @@ To install dependencies, run:
 pip install -r requirements.txt
 ```
 
-## 提取owl文件中的信息为可训练的pt文件
+## Extracting Information from OWL Files into Trainable .pt Files
 Execute the following command to run the inference:
 ```bash
 python owl_to_pt.py
